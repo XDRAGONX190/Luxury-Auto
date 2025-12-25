@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر السيارات الرياضية الفاخرة</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cart-container">
+        <button class="cart-btn" onclick="toggleCart()">
+            🛒 السلة
+            <span class="cart-count" id="cartCount">0</span>
+        </button>
+    </div>
+
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>🛒 سلة التسوق</h2>
+                <button class="close-cart" onclick="toggleCart()">×</button>
+            </div>
+            <div class="cart-items" id="cartItems"></div>
+            <div class="cart-summary" id="cartSummary"></div>
+        </div>
+    </div>
+
+    <div class="header">
+        <h1>🏎️ متجر السيارات الرياضية الفاخرة 🏎️</h1>
+        <p>اختر سيارة أحلامك من مجموعتنا الحصرية</p>
+    </div>
+
+    <div class="filters">
+        <button class="filter-btn active" data-color="all">جميع السيارات</button>
+        <button class="filter-btn" data-color="black">سوداء</button>
+        <button class="filter-btn" data-color="white">بيضاء</button>
+        <button class="filter-btn" data-color="red">حمراء</button>
+        <button class="filter-btn" data-color="blue">زرقاء</button>
+        <button class="filter-btn" data-color="silver">فضية</button>
+        <button class="filter-btn" data-color="yellow">صفراء</button>
+    </div>
+
+    <div class="cars-grid" id="carsGrid"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
